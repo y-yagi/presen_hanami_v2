@@ -1,6 +1,6 @@
 ---
 theme: seriph
-title: About Rails 8.0
+title: Hanami 🌸
 # apply any unocss classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
@@ -29,6 +29,16 @@ y-yagi
 
 ---
 src: ./pages/intro.md
+hide: false
+---
+
+---
+src: ./pages/about_01.md
+hide: false
+---
+
+---
+src: ./pages/about_02.md
 hide: false
 ---
 
