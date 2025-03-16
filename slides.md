@@ -22,7 +22,7 @@ fonts:
   serif: 'M PLUS 1p'
 ---
 
-## Returning HANAMI
+## Hanami🌸
 
 Ginza.rb 89回
 y-yagi
@@ -39,6 +39,47 @@ hide: false
 
 ---
 src: ./pages/about_02.md
+hide: false
+---
+
+---
+src: ./pages/about_03.md
+hide: false
+---
+
+---
+src: ./pages/about_04.md
+hide: false
+---
+
+---
+src: ./pages/about_05.md
+hide: false
+---
+
+---
+src: ./pages/hanami_v2_01.md
+hide: false
+layout: center
+---
+
+---
+src: ./pages/hanami_v2_02.md
+hide: false
+---
+
+---
+src: ./pages/hanami_v2_03.md
+hide: false
+---
+
+---
+src: ./pages/hanami_v2_04.md
+hide: false
+---
+
+---
+src: ./pages/hanami_v2_05.md
 hide: false
 ---
 
