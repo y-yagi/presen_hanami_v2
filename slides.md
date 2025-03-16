@@ -79,7 +79,23 @@ hide: false
 ---
 
 ---
-src: ./pages/hanami_v2_05.md
+src: ./pages/app_01.md
+hide: false
+layout: center
+---
+
+---
+src: ./pages/app_02.md
+hide: false
+---
+
+---
+src: ./pages/app_03.md
+hide: false
+---
+
+---
+src: ./pages/app_04.md
 hide: false
 ---
 
