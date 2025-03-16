@@ -2,6 +2,6 @@
 
 * コードを見る前にざっくりで良いので把握しておいた方が良さそうなライブラリについての説明を
 * [rom](https://rom-rb.org/)
-  * Ruby Object Mapper (rom-rb)
+  * Ruby Object Mapper
   * 様々なDBのデータとRubyのオブジェクトをマッピングする為のライブラリ
-  * HanamiはDBの操作周りをこのライブラリに依存している
+  * HanamiはこれをORMのライブラリとして使用している
