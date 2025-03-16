@@ -105,6 +105,11 @@ hide: false
 ---
 
 ---
+src: ./pages/app_structure_01.md
+hide: false
+---
+
+---
 src: ./pages/outro.md
 hide: false
 ---
