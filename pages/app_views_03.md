@@ -1,0 +1,18 @@
+#  Templates
+
+* Railsのようなview helperもある
+
+```ruby
+# app/templates/publishers/new.html.erb
+<h1>New publusher</h1>
+
+<%= form_for :publisher, routes.path(:create_publisher) do |f| %>
+  <p>
+    <%= f.label "Name", for: :name %>
+    <%= f.text_field :name%>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+```

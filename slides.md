@@ -110,6 +110,36 @@ hide: false
 ---
 
 ---
+src: ./pages/app_routing_01.md
+hide: false
+---
+
+---
+src: ./pages/app_actions_01.md
+hide: false
+---
+
+---
+src: ./pages/app_actions_02.md
+hide: false
+---
+
+---
+src: ./pages/app_views_01.md
+hide: false
+---
+
+---
+src: ./pages/app_views_02.md
+hide: false
+---
+
+---
+src: ./pages/app_views_03.md
+hide: false
+---
+
+---
 src: ./pages/outro.md
 hide: false
 ---
