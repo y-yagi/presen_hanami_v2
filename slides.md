@@ -185,6 +185,26 @@ hide: false
 ---
 
 ---
+src: ./pages/app_operations_01.md
+hide: false
+---
+
+---
+src: ./pages/app_operations_02.md
+hide: false
+---
+
+---
+src: ./pages/app_operations_03.md
+hide: false
+---
+
+---
+src: ./pages/app_operations_04.md
+hide: false
+---
+
+---
 src: ./pages/outro.md
 hide: false
 ---
