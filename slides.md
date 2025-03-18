@@ -140,6 +140,51 @@ hide: false
 ---
 
 ---
+src: ./pages/app_migrations_01.md
+hide: false
+---
+
+---
+src: ./pages/app_migrations_02.md
+hide: false
+---
+
+---
+src: ./pages/app_relations_01.md
+hide: false
+---
+
+---
+src: ./pages/app_relations_02.md
+hide: false
+---
+
+---
+src: ./pages/app_relations_03.md
+hide: false
+---
+
+---
+src: ./pages/app_relations_04.md
+hide: false
+---
+
+---
+src: ./pages/app_repos_01.md
+hide: false
+---
+
+---
+src: ./pages/app_repos_02.md
+hide: false
+---
+
+---
+src: ./pages/app_structs_01.md
+hide: false
+---
+
+---
 src: ./pages/outro.md
 hide: false
 ---
