@@ -205,6 +205,21 @@ hide: false
 ---
 
 ---
+src: ./pages/app_components_01.md
+hide: false
+---
+
+---
+src: ./pages/app_components_02.md
+hide: false
+---
+
+---
+src: ./pages/app_components_03.md
+hide: false
+---
+
+---
 src: ./pages/outro.md
 hide: false
 ---
