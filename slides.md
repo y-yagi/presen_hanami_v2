@@ -220,6 +220,52 @@ hide: false
 ---
 
 ---
+src: ./pages/app_components_04.md
+hide: false
+---
+
+---
+src: ./pages/app_components_05.md
+hide: false
+---
+
+---
+src: ./pages/app_components_06.md
+hide: false
+---
+
+---
+src: ./pages/clean_architecture_01.md
+hide: false
+layout: center
+---
+
+---
+src: ./pages/clean_architecture_02.md
+hide: false
+---
+
+---
+src: ./pages/clean_architecture_03.md
+hide: false
+---
+
+---
+src: ./pages/clean_architecture_04.md
+hide: false
+---
+
+---
+src: ./pages/clean_architecture_05.md
+hide: false
+---
+
+---
+src: ./pages/clean_architecture_06.md
+hide: false
+---
+
+---
 src: ./pages/outro.md
 hide: false
 ---

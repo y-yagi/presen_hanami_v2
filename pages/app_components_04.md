@@ -1,7 +1,7 @@
 #  Components
 
-* `app`ディレクトリは自動で`Components`に登録されるが、それ以外に手動で登録することも可能
-* この登録の処理を`Providers`と呼んでいる
+* `app`ディレクトリは自動で`Components`として登録されるが、それ以外に手動で登録することも可能
+* この処理を`Providers`と呼んでいる
 
 ```ruby
 Hanami.app.register_provider(:email_client) do
