@@ -1,21 +1,6 @@
 #  Components
 
-```ruby
-class Show < Bookshelf::View
-  include Deps["repos.book_repo"]
-
-  expose :book do |id:|
-    book_repo.get(id)
-  end
-end
-```
-
-上記は下記のコードと同一
-
-```ruby
-class Show < Bookshelf::View
-  expose :book do |id:|
-    Bookshelf::Repos::BookRepo.new.get(id)
-  end
-end
-```
+* `app`ディレクトリ配下のファイルは、それぞれ単一の責務を持つ`Components`として扱われる
+  * 例えば、`BookRepo`クラスは、`books`テーブルの操作に対する責務を持つ`Components`
+* Hanamiはこの`Components`を、アプリケーションという`Container`に追加し、アプリで簡単に使用出来るようにしている
+* `include Deps`はこの`Components`使うようにする為の処理

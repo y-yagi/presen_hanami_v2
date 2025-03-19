@@ -180,6 +180,11 @@ hide: false
 ---
 
 ---
+src: ./pages/app_repos_03.md
+hide: false
+---
+
+---
 src: ./pages/app_structs_01.md
 hide: false
 ---
@@ -231,6 +236,11 @@ hide: false
 
 ---
 src: ./pages/app_components_06.md
+hide: false
+---
+
+---
+src: ./pages/app_components_07.md
 hide: false
 ---
 

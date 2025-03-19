@@ -1,21 +1,6 @@
 #  Components
 
-* `app`ディレクトリは自動で`Components`として登録されるが、それ以外に手動で登録することも可能
-* この処理を`Providers`と呼んでいる
-
-```ruby
-Hanami.app.register_provider(:email_client) do
-  prepare do
-    require "acme_email/client"
-  end
-
-  start do
-    client = AcmeEmail::Client.new(
-      api_key: target["settings"].acme_api_key,
-      default_from: "no-reply@bookshelf.example.com"
-    )
-
-    register "email_client", client
-  end
-end
-```
+* `app`ディレクトリ配下にある`Components`のキーは、ディレクトリ名+ファイル名で生成される
+  * `app/repos/book_repo.rb`にある場合、キーは`repos.book_repo`になる
+* アプリケーションの`Container`は`Hanami.app`で参照出来、ここから直接`Components`の取得も出来る
+* 例えば、テストで、`Hanami.app["relations.books"]`とすると、`Bookshelf::Relations::Books`のインスタンスが取得出来る

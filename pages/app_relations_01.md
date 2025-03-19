@@ -1,8 +1,8 @@
 #  Relations
 
 * DBのテーブルとの関連付けを行う
-* `schema`メソッドに`infer`オプションをつけると、テーブルの情報からattributesを推測してくれる
-* associationsの指定もここで行う
+* `schema`メソッドに`infer`オプションをつけると、テーブルの情報からattributesを設定してくれる
+* associationsの指定もここ
 
 ```ruby
 # app/relations/books.rb

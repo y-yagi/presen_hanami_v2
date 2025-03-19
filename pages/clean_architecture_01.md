@@ -1,1 +1,1 @@
-# アプリの話はここまで。<br />最後に少しだけClean Architectureとの関連について。
+# アプリの話はここまで<br /><br />最後にClean Architectureとの関連について

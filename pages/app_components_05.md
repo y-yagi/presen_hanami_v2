@@ -1,24 +1,22 @@
 #  Components
 
-* `Providers`で登録された`Components`は`app`配下の`Components`と同様に使用可能
+* `app`ディレクトリ配下のファイルは自動で`Components`として登録されるが、それ以外に手動で登録することも可能
+* この機能を`Providers`と呼んでいる
 
 ```ruby
-class SendWelcomeEmail < Bookshelf::Operation
-  include Deps["email_client"]
-
-  def call(name:, email_address:)
-    result = step deliver(name:, email_address:)
+# config/providers/email_client.rb
+Hanami.app.register_provider(:email_client) do
+  prepare do
+    require "acme_email/client"
   end
 
-  private
+  start do
+    client = AcmeEmail::Client.new(
+      api_key: target["settings"].acme_api_key,
+      default_from: "no-reply@bookshelf.example.com"
+    )
 
-  def deliver(name:, email_address:)
-    Success(email_client.deliver(
-      to: email_address,
-      subject: "Welcome!",
-      text_body: "<p>Welcome to Bookshelf #{name}!</p>",
-      html_body:  "Welcome to Bookshelf #{name}!"
-    ))
+    register "email_client", client
   end
 end
 ```

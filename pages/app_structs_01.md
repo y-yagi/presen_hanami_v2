@@ -1,7 +1,7 @@
 #  Structs
 
-* 先に記載した通り、`Repos`は`Structs`を返す
-* `Structs`を拡張したい場合、独自の`Struct`を継承したクラスを作成すれば良い
+* `Repos`は`Structs`を返す
+* `Structs`を拡張したい場合、`Struct` classを継承したクラスを作成すればOK
 
 ```ruby
 # app/structs/book.rb

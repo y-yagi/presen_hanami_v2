@@ -1,7 +1,25 @@
 #  Components
 
-* `Container`と`Components`の仕組みは、[dry\-system](https://dry-rb.org/gems/dry-system/)を使っている
-  * dry-systemをほぼそのまま使用しており、ちょっとAPIをラップしている位
-* 「依存関係を完全にコントロールし、個々のコンポーネント間の境界線を引くのが非常に簡単な方法でシステムを構成するため」らしい
-* dry-systemの発想は、[stuartsierra/component](https://github.com/stuartsierra/component)というClosureのライブラリがきているとのこと
-* 詳細が気になる方は、上記dry-systemのドキュメントをみてね
+* `Providers`で登録された`Components`は、`app`配下の`Components`と同様に使用可能
+
+```ruby
+# app/publishers/send_welcome_email.rb
+class SendWelcomeEmail < Bookshelf::Operation
+  include Deps["email_client"]
+
+  def call(name:, email_address:)
+    result = step deliver(name:, email_address:)
+  end
+
+  private
+
+  def deliver(name:, email_address:)
+    Success(email_client.deliver(
+      to: email_address,
+      subject: "Welcome!",
+      text_body: "<p>Welcome to Bookshelf #{name}!</p>",
+      html_body:  "Welcome to Bookshelf #{name}!"
+    ))
+  end
+end
+```

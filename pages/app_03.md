@@ -1,7 +1,8 @@
 # ライブラリ解説
 
-* コードを見る前にざっくりで良いので把握しておいた方が良いライブラリについて
-* [rom](https://rom-rb.org/)
-  * Ruby Object Mapper
-  * 様々なDBのデータとRubyのオブジェクトをマッピングする為のライブラリ
-  * HanamiはこれをORMやマイグレーション用のライブラリとして使用している
+* [dry-rb](https://dry-rb.org/)
+  * "dry-rb is a collection of next-generation Ruby libraries"
+  * バリデーションの為のdry-validationや、データタイプを指定するためのdry-typesなどなど
+  * Hanamiは様々な所でdry-rbのライブラリを使っている
+* rom、dry-rbの開発者はHanamiに関わっている人が多い
+  * Tim Rileyはrom、dry-rb、両方のcore member

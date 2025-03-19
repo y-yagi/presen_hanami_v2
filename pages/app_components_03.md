@@ -1,6 +1,21 @@
 #  Components
 
-* `app`ディレクトリ配下にある`Components`のキーは、ディレクトリ名+ファイル名で生成される
-  * `app/repos/book_repo.rb`にある場合、キーは`repos.book_repo`になる
-* はアプリケーションの`container`は`Hanami.app`で参照出来、ここから直接`Components`の取得も出来る
-* 例えば、テストで、`Hanami.app["relations.books"]`とすると、簡単に`Relations`の取得が出来る
+```ruby
+class Show < Bookshelf::View
+  include Deps["repos.book_repo"]
+
+  expose :book do |id:|
+    book_repo.get(id)
+  end
+end
+```
+
+上記は下記のコードと同一
+
+```ruby
+class Show < Bookshelf::View
+  expose :book do |id:|
+    Bookshelf::Repos::BookRepo.new.get(id)
+  end
+end
+```
