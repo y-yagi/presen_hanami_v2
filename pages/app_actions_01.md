@@ -1,8 +1,8 @@
 #  Actions
 
-* HTTPリクエストの処理をするための機能
+* HTTPリクエスト処理をするための機能
   * Railsにおけるcontroller
-* Railsにおけるcontrollerのaction毎にクラスを作成する
+* Action毎にクラスを作成する
 
 ```ruby
 # app/actions/books/new.rb

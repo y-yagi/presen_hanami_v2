@@ -1,5 +1,7 @@
 #  Templates
 
+* 見ての通り
+
 ```ruby
 # app/templates/books/index.html.erb
 <h1>Books</h1>

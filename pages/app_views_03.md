@@ -1,6 +1,6 @@
 #  Templates
 
-* Railsのようなview helperもある
+* `form_for`などの、`Templates`向けのメソッドもある
 
 ```ruby
 # app/templates/publishers/new.html.erb

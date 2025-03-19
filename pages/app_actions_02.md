@@ -1,6 +1,6 @@
 #  Actions
 
-* HanamiではActionsでvalidationを書く
+* `Actions`でvalidationを行う
 
 ```ruby
 # app/actions/books/create.rb
