@@ -1,6 +1,31 @@
 #  Operations
 
-* publicメソッドは`call`だけ
-* `step`の戻り値は必ず`Success`か`Failure`である必要がある
-  * `Success`と`Failure`は[dry\-monads](https://dry-rb.org/gems/dry-monads/)のクラス
-* `step`の戻り値が違うクラスの場合、`dry-operation`がエラーを返す
+```ruby
+# app/publishers/create.rb
+module Bookshelf
+  module Publishers
+    class Create < Bookshelf::Operation
+      def call(attrs)
+        attrs = step validate(attrs)
+        publisher = step create(attrs)
+        publisher
+      end
+
+      private
+
+      def validate(attrs)
+        if attrs.nil? || attrs[:name].nil? || attrs[:name].gsub(/[[:space:]]/, "").empty?
+          Failure([:invalid, "name should not be empty"])
+        else
+          Success(attrs)
+        end
+      end
+
+      def create(attrs)
+        Success(publisher_repo.create(attrs))
+      end
+    end
+  end
+end
+```
+

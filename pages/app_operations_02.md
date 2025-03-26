@@ -1,31 +1,23 @@
 #  Operations
 
+```bash
+$ bundle exec hanami generate operation books.create
+```
+
+↑のコマンドで下記ファイルが生成される
+
 ```ruby
-# app/publishers/create.rb
+# app/books/create.rb
 module Bookshelf
-  module Publishers
+  module Books
     class Create < Bookshelf::Operation
-      def call(attrs)
-        attrs = step validate(attrs)
-        publisher = step create(attrs)
-        publisher
-      end
-
-      private
-
-      def validate(attrs)
-        if attrs.nil? || attrs[:name].nil? || attrs[:name].gsub(/[[:space:]]/, "").empty?
-          Failure([:invalid, "name should not be empty"])
-        else
-          Success(attrs)
-        end
-      end
-
-      def create(attrs)
-        Success(publisher_repo.create(attrs))
+      def call
       end
     end
   end
 end
 ```
 
+* 上記例だと`app`配下に`books`が作成される
+  * `operations.books.create`のように、ネストを深くする事も可能
+* dry-rbのライブラリの1つである[dry\-operation](https://dry-rb.org/gems/dry-operation/)をそのまま使用している

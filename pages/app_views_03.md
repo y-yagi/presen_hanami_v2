@@ -1,18 +1,14 @@
 #  Templates
 
-* `form_for`などの、`Templates`向けのメソッドもある
+* 見ての通り
 
 ```ruby
-# app/templates/publishers/new.html.erb
-<h1>New publusher</h1>
+# app/templates/books/index.html.erb
+<h1>Books</h1>
 
-<%= form_for :publisher, routes.path(:create_publisher) do |f| %>
-  <p>
-    <%= f.label "Name", for: :name %>
-    <%= f.text_field :name%>
-  </p>
-  <p>
-    <%= f.submit "Create" %>
-  </p>
-<% end %>
+<ul>
+  <% books.each do |book| %>
+    <li><%= book[:title] %>, by <%= book[:author] %></li>
+  <% end %>
+<h1>Books</h1>
 ```

@@ -1,14 +1,22 @@
-#  Templates
+#  Views
 
-* 見ての通り
+* `expose`でテンプレートで使用するデータの設定を行う
 
 ```ruby
-# app/templates/books/index.html.erb
-<h1>Books</h1>
+# app/views/books/index.rb
+module Bookshelf
+  module Views
+    module Books
+      class Index < Bookshelf::View
+        include Deps["repos.book_repo"]
 
-<ul>
-  <% books.each do |book| %>
-    <li><%= book[:title] %>, by <%= book[:author] %></li>
-  <% end %>
-<h1>Books</h1>
+        expose :books do |page:, per_page:|
+          book_repo.all_by_title(page:, per_page:)
+        end
+      end
+    end
+  end
+end
 ```
+
+* 謎の`Deps`については後で説明します

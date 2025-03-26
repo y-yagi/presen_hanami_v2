@@ -140,6 +140,11 @@ hide: false
 ---
 
 ---
+src: ./pages/app_views_04.md
+hide: false
+---
+
+---
 src: ./pages/app_migrations_01.md
 hide: false
 ---
@@ -206,6 +211,11 @@ hide: false
 
 ---
 src: ./pages/app_operations_04.md
+hide: false
+---
+
+---
+src: ./pages/app_operations_05.md
 hide: false
 ---
 

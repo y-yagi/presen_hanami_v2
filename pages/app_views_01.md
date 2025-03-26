@@ -2,22 +2,4 @@
 
 * レンダーするテンプレートや、そのテンプレートで使用するデータを定義する
   * レイアウトファイルの指定などもここ
-* `expose`でテンプレートで使用するデータの設定を行う
-* 謎の`Deps`については後で説明します
-
-```ruby
-# app/views/books/index.rb
-module Bookshelf
-  module Views
-    module Books
-      class Index < Bookshelf::View
-        include Deps["repos.book_repo"]
-
-        expose :books do |page:, per_page:|
-          book_repo.all_by_title(page:, per_page:)
-        end
-      end
-    end
-  end
-end
-```
+  * クラス名からテンプレート名を推察するので、命名規則が合っていれば、明示的なテンプレート名の指定は不要
