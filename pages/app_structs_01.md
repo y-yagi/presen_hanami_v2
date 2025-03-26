@@ -1,6 +1,5 @@
 #  Structs
 
-* `Repos`は`Structs`を返す
 * `Structs`を拡張したい場合、`Struct` classを継承したクラスを作成すればOK
 
 ```ruby

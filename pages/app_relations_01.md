@@ -1,6 +1,6 @@
 #  Relations
 
-* DBのテーブルとの関連付けを行う
+* DBのテーブルとのRubyのオブジェクトとの関連付けを行う
 * `schema`メソッドに`infer`オプションをつけると、テーブルの情報からattributesを設定してくれる
 * associationsの指定もここ
 

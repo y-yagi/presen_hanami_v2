@@ -1,7 +1,7 @@
 #  Migrations
 
 * 提供されているコマンドは下記の通り
-* v2.2になってからの`db rollback`とかがまだ無い(romのrakeタスク叩けば対応はできる)
+* v2.2になってからの`db rollback`とかがまだ無い(romのrakeタスクを使えば対応はできる)
 
 ```bash
 $ bundle exec hanami db --help

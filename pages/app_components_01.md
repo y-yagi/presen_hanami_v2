@@ -1,6 +1,6 @@
 # Components
 
-* ここからは後回しにしたDepsについて
+* ここからは、後回しにした`Deps`について
 
 ```ruby
 # app/views/books/index.rb

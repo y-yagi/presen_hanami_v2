@@ -15,4 +15,4 @@ def handle(request, response)
 end
 ```
 
-* `Success`と`Failure`は実際の値をラップしたクラス、実際の値がどうなるかについては特に制限は無し
+* `Success`と`Failure`は実際の値をラップしたクラスで、実際の値がどうなるかについては特に制限は無し

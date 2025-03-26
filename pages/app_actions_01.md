@@ -1,6 +1,6 @@
 #  Actions
 
-* HTTPリクエスト処理をするための機能
+* HTTPリクエストを処理するための機能
   * Railsにおけるcontroller
 * Action毎にクラスを作成する
 

@@ -19,5 +19,5 @@ module Bookshelf
 end
 ```
 
-* 上の例だと`app`配下に`books`が作成されｒ
+* 上の例だと`app`配下に`books`が作成される
 * dry-rbのライブラリの1つである[dry\-operation](https://dry-rb.org/gems/dry-operation/)をそのまま使用している

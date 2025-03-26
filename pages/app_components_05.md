@@ -1,6 +1,6 @@
 #  Components
 
-* `app`ディレクトリ配下のファイルは自動で`Components`として登録されるが、それ以外に手動で登録することも可能
+* `app`ディレクトリ配下のファイルは自動で`Components`として登録されるが、それ以外に手動で`Components`を登録することも可能
 * この機能を`Providers`と呼んでいる
 
 ```ruby

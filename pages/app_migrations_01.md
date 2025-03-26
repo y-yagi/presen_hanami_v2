@@ -1,6 +1,6 @@
 #  Migrations
 
-* romのmigration APIを使用している
+* romの機能を使用している
 * Railsと異なり、ファイルの格納先は`config/db`配下
 
 ```ruby
