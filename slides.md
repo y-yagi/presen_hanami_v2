@@ -286,6 +286,17 @@ hide: false
 ---
 
 ---
+src: ./pages/plans_for_2025_01.md
+hide: false
+layout: center
+---
+
+---
+src: ./pages/plans_for_2025_02.md
+hide: false
+---
+
+---
 src: ./pages/outro.md
 hide: false
 ---
