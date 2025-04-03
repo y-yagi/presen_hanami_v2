@@ -5,4 +5,5 @@
   * バリデーションの為のdry-validationや、データタイプを指定するためのdry-typesなどなど
   * Hanamiは様々な所でdry-rbのライブラリを使っている
 * rom、dry-rbの開発者はHanamiに関わっている人が多い
-  * Tim Rileyはrom、dry-rb、両方のcore member
+  * Tim Riley氏はrom、dry-rb、両方のcore member
+  * Luca Guidi氏もdry-rbのcore memberだった(引退済み)

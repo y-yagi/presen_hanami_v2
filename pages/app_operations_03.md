@@ -5,6 +5,8 @@
 module Bookshelf
   module Publishers
     class Create < Bookshelf::Operation
+      include Deps["repos.publisher_repo"]
+
       def call(attrs)
         attrs = step validate(attrs)
         publisher = step create(attrs)

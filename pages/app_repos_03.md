@@ -8,4 +8,4 @@ Bookshelf::Repos::BookRepo.new.get(1).class #=> Bookshelf::Structs::Book
 ```
 
 * `Structs`はDBのコネクションを持たないので、`Structs`になった後にDBへのロードが発生する事は無い
-  *そのため、N+1は発生しない(出来ない)
+  * そのため、N+1は発生しない(出来ない)

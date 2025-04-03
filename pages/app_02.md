@@ -4,4 +4,4 @@
 * [rom](https://rom-rb.org/)
   * Ruby Object Mapper
   * 様々なDBのデータとRubyのオブジェクトをマッピングする為のライブラリ
-  * HanamiはこれをORMやマイグレーション用のライブラリとして使用している
+  * HanamiではORMやマイグレーション用のライブラリとして使用している
